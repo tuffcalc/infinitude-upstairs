@@ -6,5 +6,5 @@ RUN apt-get update && apt-get -y upgrade \
     && chmod +x /infinitude/infinitude \
     && cd /infinitude \
     && cpanm Mojolicious::Lite CHI DateTime Try::Tiny Path::Tiny JSON IO::Termios
-EXPOSE 3000
+EXPOSE 3002
 ENTRYPOINT /infinitude/docker/entrypoint.sh
